@@ -1,0 +1,60 @@
+/* Custom resets and basic styling */
+body {
+    background-color: #121212 !important; /* Forces a deep dark theme */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Helper background for footer and nested boxes */
+.bg-darker {
+    background-color: #0a0a0a;
+}
+
+/* Image constraints */
+.hero-img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Project Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Skill Badges replicating the design from the PDF */
+.skill-badge {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    padding: 8px 16px;
+    margin: 4px 4px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Contact form adjustments */
+.contact-section {
+    background-color: #1a1a1a;
+}
+
+.form-control::placeholder {
+    color: #888;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #0dcaf0; /* Bootstrap info color */
+}
